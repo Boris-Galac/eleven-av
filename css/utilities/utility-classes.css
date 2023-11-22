@@ -1,0 +1,11 @@
+.container {
+  width: min(100% - 32px, 1024px);
+  margin-inline: auto;
+}
+.p-block-6 {
+  padding-block: 6rem;
+}
+.section {
+  position: relative;
+  height: 100vh;
+}

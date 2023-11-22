@@ -1,0 +1,12 @@
+.promo {
+  position: relative;
+}
+.promo-video {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  cursor: auto;
+}
+.promo-video[data-play="true"] {
+  cursor: pointer;
+}

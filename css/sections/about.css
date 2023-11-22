@@ -1,0 +1,21 @@
+.about {
+  position: relative;
+  background-color: var(--white);
+  isolation: isolate;
+}
+.about::after {
+  content: "";
+  position: absolute;
+  background: url("/assets/images/grid-eeleven-img.png") no-repeat center
+    center/cover;
+  z-index: -1;
+  width: 100%;
+  inset: 0;
+}
+.about__wrapper {
+  padding-block: 20rem;
+}
+.about__logo-heading {
+  margin-bottom: 4rem;
+  margin-inline: auto;
+}

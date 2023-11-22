@@ -1,0 +1,34 @@
+.kontakt {
+  height: 80vh;
+  background: linear-gradient(139deg, black, #090b0e);
+}
+.kontakt__wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  grid-template-rows: 10rem 1fr;
+  overflow: hidden;
+}
+.kontakt__right-col {
+  display: grid;
+  gap: 2.5rem;
+  white-space: nowrap;
+}
+.kontakt__right-col--inner {
+  position: relative;
+  display: grid;
+  gap: 2.5rem;
+  height: max-content;
+  animation: scroll infinite 20s linear;
+}
+.kontakt__right-col--inner img {
+  opacity: 0.5;
+}
+@keyframes scroll {
+  to {
+    transform: translateY(-100%);
+  }
+}
+.scroll-white-logo {
+  opacity: 1 !important;
+}

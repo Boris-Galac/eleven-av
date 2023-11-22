@@ -1,0 +1,31 @@
+.kontakt__form {
+  place-self: center;
+  width: 30vw;
+  grid-column: 1;
+  grid-row: 2;
+  gap: 2rem;
+  display: grid;
+}
+.kontakt__form-row {
+  display: grid;
+}
+.kontakt__form-row label {
+  color: var(--white);
+  display: grid;
+  margin-bottom: 0.5rem;
+}
+.kontakt__input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--white);
+  outline: 0;
+  color: var(--white);
+}
+.kontakt__form textarea {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  outline: 0;
+  height: 15rem;
+  color: var(--white);
+  padding: 1rem;
+}

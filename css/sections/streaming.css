@@ -1,0 +1,16 @@
+.streaming::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--black);
+  opacity: 0.4;
+  z-index: 1;
+}
+.streaming::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/assets/images/snimanje-uzivo-img.jpg") no-repeat center
+    center/cover;
+  background-attachment: fixed;
+}

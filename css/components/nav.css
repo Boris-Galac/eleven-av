@@ -1,0 +1,54 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background-color: var(--black);
+}
+.header__logo {
+  position: absolute;
+  width: 100px;
+  transform: translateY(-50%);
+  top: 47%;
+  left: 2rem;
+  transition: 0.7s;
+}
+.header__logo[data-visible="false"] {
+  scale: 0;
+}
+.header__logo[data-visible="true"] {
+  scale: 1;
+}
+.nav__list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.nav__link {
+  position: relative;
+  padding: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.nav__link::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: var(--white);
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  width: 70%;
+  display: block;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+.nav__link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}

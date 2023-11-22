@@ -1,0 +1,321 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="/assets/images/logo-white.svg"
+        alt="header logo eleven av"
+        class="header__logo"
+        data-visible="false"
+      />
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">video galerija</a>
+          </li>
+          <li class="nav__item">
+            <a href="#promo" class="nav__link">promo video</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">eleven av</a>
+          </li>
+          <li class="nav__item">
+            <a href="#kontakt" class="nav__link">kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-indicator"></div>
+      <button
+        class="scroll-to-top-btn"
+        data-visible="false"
+        aria-label="scroll to top of the page"
+      >
+        <img src="/assets/icons/top-icon.svg" alt="scroll to top icon" />
+      </button>
+    </header>
+    <main class="main">
+      <aside class="aside">
+        <nav class="side-nav">
+          <a class="aside-nav__link" href="#streaming">
+            <img
+              src="/assets/icons/prijenos-uzivo-icon.svg"
+              aria-hidden="true"
+            />
+            PRIJENOSI UŽIVO
+          </a>
+          <a class="aside-nav__link" href="#produkcija"
+            ><img src="/assets/icons/produkcija-icon.svg" aria-hidden="true" />
+            PRODUKCIJA
+          </a>
+          <a class="aside-nav__link" href="#montaza"
+            ><img src="/assets/icons/montaza-icon.svg" aria-hidden="true" />
+            SNIMANJE i MONTAŽA
+          </a>
+        </nav>
+      </aside>
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__logo-wrapper">
+            <img
+              src="/assets/images/logo-white.svg"
+              alt="logo eleven on hero showcase"
+              class="hero__logo logo-white"
+            />
+            <img
+              src="/assets/images/logo-blue.svg"
+              alt="logo eleven on hero showcase"
+              class="hero__logo logo-blue"
+            />
+            <img
+              src="/assets/images/logo-green.svg"
+              alt="logo eleven on hero showcase"
+              class="hero__logo logo-green"
+            />
+          </div>
+        </div>
+        <a href="#promo" class="scroll-down-btn">
+          <img src="/assets/icons/down-arrow-icon.svg" aria-hidden="true" />
+        </a>
+      </section>
+      <!------------------->
+      <!-- PROMO SECTION -->
+      <section class="section promo" id="promo">
+        <div class="container">
+          <div class="promo__wrapper p-block-6">
+            <h2 class="h2-heading h2-heading--right">promo video</h2>
+            <video
+              class="promo-video"
+              muted
+              playsinline
+              data-play="false"
+              controls
+              type="video/mp4"
+              src="/assets/promo-video.mp4"
+            ></video>
+            <button class="play-promo-video-btn" data-play-btn="true">
+              <div class="triangle"></div>
+              <div class="circle"></div>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!------------------->
+      <!-- STREAMING SECTION -->
+      <section class="section streaming" id="streaming">
+        <div class="container">
+          <div class="streaming__wrapper p-block-6">
+            <h2 class="h2-heading">prijenos uživo</h2>
+            <article class="section-article">
+              <img
+                src="/assets/icons/prijenos-uzivo-icon.svg"
+                aria-hidden="true"
+              />
+              <p>
+                Prijenosi svih vrsta događaja, od konferencija do sportskih
+                natjecanja, na internet platforme.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!------------------->
+      <!-- PRODUKCIJA SECTION -->
+      <section class="section produkcija" id="produkcija">
+        <div class="container">
+          <div class="produkcija__wrapper p-block-6">
+            <h2 class="h2-heading">produkcija svih formata</h2>
+            <article class="section-article">
+              <img src="/assets/icons/produkcija-icon.svg" aria-hidden="true" />
+              <p>
+                Od podcasta do TV emisija, pomoć pri realizaciji ili kompletna
+                realizacija projekata.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!------------------->
+      <!-- MONTAZA SECTION -->
+      <section class="section montaza" id="montaza">
+        <div class="container">
+          <div class="montaza__wrapper p-block-6">
+            <h2 class="h2-heading">snimanje i montaža</h2>
+            <article class="section-article">
+              <img src="/assets/icons/montaza-icon.svg" aria-hidden="true" />
+              <p>
+                Snimanje i montaža svih formata: korporativni video, video za
+                društvene mreže, ENG i news, TV emisije, podcasti.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!------------------->
+      <!-- ABOUT ELEVEN SECTION -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about__wrapper p-block-6">
+            <img
+              src="/assets/images/logo-dark.svg"
+              class="about__logo-heading"
+              alt="logo eleven about"
+            />
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur. Urna id vel tempus
+              adipiscing imperdiet nunc. Et diam lectus non amet euismod cursus.
+              Pharetra id consectetur sit nunc massa vulputate vitae. Urna
+              mauris quis convallis mauris fermentum eu. Erat quam nec accumsan
+              diam. Lacus quis sit tristique diam pulvinar ridiculus enim neque
+              at. Nulla id orci aliquam sagittis. Vel amet integer tempus
+              pretium eu. In mauris tortor mi dolor varius diam dapibus.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!------------------->
+      <!-- KONTAKT SECTION -->
+      <section class="kontakt" id="kontakt">
+        <div class="container">
+          <div class="kontakt__wrapper p-block-6">
+            <h2 class="h2-heading h2-heading--left kontakt__heading">
+              kontaktirajte nas
+            </h2>
+            <form class="kontakt__form">
+              <div class="kontakt__form-row">
+                <label for="name">Vaše ime</label>
+                <input type="text" class="kontakt__input" id="name" />
+              </div>
+              <div class="kontakt__form-row">
+                <label for="adresa">Vaše ime</label>
+                <input type="email" class="kontakt__input" id="adresa" />
+              </div>
+              <div class="kontakt__form-row">
+                <label for="adresa">Vaša poruka</label>
+                <textarea name="adresa" id="adresa"></textarea>
+              </div>
+            </form>
+            <div class="kontakt__right-col">
+              <div class="kontakt__right-col--inner">
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-white.svg"
+                  aria-hidden="true"
+                  class="scroll-white-logo"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+              </div>
+              <div class="kontakt__right-col--inner">
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-white.svg"
+                  aria-hidden="true"
+                  class="scroll-white-logo"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  src="/assets/images/logo-kontakt-gray.svg"
+                  aria-hidden="true"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------->
+    </main>
+    <footer class="footer p-block-6">
+      <div class="container">
+        <div class="footer__wrapper">
+          <img src="/assets/images/logo-footer.svg" alt="footer logo eleven" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

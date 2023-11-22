@@ -1,0 +1,111 @@
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.scroll-down-btn {
+  position: absolute;
+  bottom: 3rem;
+  left: 2.8rem;
+  z-index: 3;
+  animation: scroll-down-btn 1s alternate infinite ease-in-out;
+}
+@keyframes scroll-down-btn {
+  to {
+    bottom: 2rem;
+  }
+}
+.play-promo-video-btn {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.triangle {
+  position: relative;
+  aspect-ratio: 1;
+  width: max(10vw, 100px);
+  max-width: 150px;
+  background-color: hsla(0, 0%, 100%, 0.6);
+  clip-path: polygon(0 0, 0% 100%, 85% 50%);
+  isolation: isolate;
+  z-index: 5;
+}
+.circle {
+  position: relative;
+  aspect-ratio: 1;
+  width: 200px;
+  border: 10px solid hsla(0, 0%, 100%, 0.6);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 32%;
+  border-radius: 50%;
+}
+.triangle,
+.circle {
+  transition: 0.3s;
+  pointer-events: none;
+}
+/* play btn */
+.play-promo-video-btn:hover .triangle {
+  background-color: hsla(0, 0%, 100%, 1);
+}
+.play-promo-video-btn:hover .circle {
+  border: 10px solid hsla(0, 0%, 100%, 1);
+  filter: drop-shadow(0 0 10px var(--white));
+}
+.play-promo-video-btn[data-play-btn="false"] {
+  animation: play-start 0.3s forwards;
+}
+@keyframes play-start {
+  from {
+    opacity: 1;
+    pointer-events: visible;
+  }
+  to {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.play-promo-video-btn[data-play-btn="true"] {
+  animation: play-end 0.3s forwards;
+}
+@keyframes play-end {
+  from {
+    opacity: 0;
+    pointer-events: none;
+  }
+  to {
+    opacity: 1;
+    pointer-events: visible;
+  }
+}
+/* scroll to top btn */
+.scroll-to-top-btn {
+  position: fixed;
+  background-color: var(--black);
+  aspect-ratio: 1;
+  border: 2px solid gray;
+  border-radius: 100vmax;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  bottom: 2rem;
+  right: 4rem;
+}
+.scroll-to-top-btn img {
+  width: 50px;
+  pointer-events: none;
+}
+.scroll-to-top-btn[data-visible="false"] {
+  opacity: 0;
+}
+.scroll-to-top-btn[data-visible="true"] {
+  opacity: 1;
+}
+.scroll-to-top-btn:hover {
+  background-color: var(--black);
+  border-color: var(--white);
+}
