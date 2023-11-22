@@ -189,16 +189,16 @@
             </h2>
             <form class="kontakt__form">
               <div class="kontakt__form-row">
-                <label for="name">Vaše ime</label>
                 <input type="text" class="kontakt__input" id="name" />
+                <label for="name">Vaše ime</label>
               </div>
               <div class="kontakt__form-row">
-                <label for="adresa">Vaše ime</label>
                 <input type="email" class="kontakt__input" id="adresa" />
+                <label for="adresa">Vaša email adresa</label>
               </div>
-              <div class="kontakt__form-row">
-                <label for="adresa">Vaša poruka</label>
+              <div class="kontakt__form-row kontakt__form-row--last-row">
                 <textarea name="adresa" id="adresa"></textarea>
+                <label for="adresa">Vaša poruka</label>
               </div>
             </form>
             <div class="kontakt__right-col">
@@ -310,11 +310,46 @@
       </section>
       <!------------------->
     </main>
-    <footer class="footer p-block-6">
+    <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <img src="/assets/images/logo-footer.svg" alt="footer logo eleven" />
+          <img
+            src="/assets/images/logo-footer.svg"
+            class="footer__logo"
+            alt="footer logo eleven"
+          />
+          <div class="footer__inner-wrapper">
+            <div class="footer__inner-wrapper--left-col">
+              <span>4140 Parker Rd. Allentown, New Mexico 31134</span>
+              <span>(704) 555-0127</span>
+              <span>Sed ut perspiciatis unde omnis iste natus</span>
+            </div>
+            <nav class="nav footer__nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">video galerija</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#promo" class="nav__link">promo video</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#about" class="nav__link">eleven av</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#kontakt" class="nav__link">kontakt</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
+      </div>
+      <img
+        src="/assets/images/blue-effect-img.png"
+        class="footer__separator-img-effect"
+        aria-hidden="true"
+      />
+      <div class="footer__copyright">
+        <p>Copyright © 2023 Eleven AV. All rights Reserved.</p>
       </div>
     </footer>
   </body>

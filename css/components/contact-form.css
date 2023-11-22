@@ -1,18 +1,22 @@
 .kontakt__form {
   place-self: center;
-  width: 30vw;
+  width: min(30vw, 390px);
   grid-column: 1;
   grid-row: 2;
-  gap: 2rem;
+  gap: 3rem;
   display: grid;
 }
 .kontakt__form-row {
+  position: relative;
   display: grid;
 }
 .kontakt__form-row label {
+  position: absolute;
+  bottom: 20px;
   color: var(--white);
   display: grid;
   margin-bottom: 0.5rem;
+  transition: 0.5s;
 }
 .kontakt__input {
   background-color: transparent;
@@ -20,12 +24,30 @@
   border-bottom: 1px solid var(--white);
   outline: 0;
   color: var(--white);
+  font-size: 18px;
+  padding: 1rem;
+  transition: 0.5s;
+}
+.kontakt__input:focus + label {
+  bottom: 50px;
 }
 .kontakt__form textarea {
   background-color: transparent;
   border: 1px solid var(--white);
   outline: 0;
   height: 15rem;
+  font-size: 18px;
+  font-family: inherit;
   color: var(--white);
   padding: 1rem;
+  transition: 0.5s;
+}
+.kontakt__form-row--last-row textarea:focus + label {
+  top: -2rem;
+  left: 1rem;
+}
+.kontakt__form-row--last-row label {
+  top: 1rem;
+  left: 1rem;
+  height: max-content;
 }

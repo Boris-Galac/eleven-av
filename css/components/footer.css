@@ -1,3 +1,35 @@
 .footer {
-  background-color: rgb(4 4 6);
+  background-color: var(--black);
+  padding-top: 6rem;
+}
+.footer span {
+  color: var(--white);
+}
+.footer__wrapper {
+  margin-bottom: 3rem;
+}
+.footer__logo {
+  margin-bottom: 3rem;
+}
+.footer__inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer__inner-wrapper--left-col {
+  display: grid;
+  gap: 1rem;
+}
+.footer__nav .nav__link {
+  padding: 0;
+}
+.footer__separator-img-effect {
+  mix-blend-mode: screen;
+}
+.footer__copyright {
+  padding: 2rem;
+}
+.footer__copyright p {
+  font-size: 1rem;
+  text-align: center;
 }

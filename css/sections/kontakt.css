@@ -26,7 +26,7 @@
 }
 @keyframes scroll {
   to {
-    transform: translateY(-100%);
+    transform: translateY(calc(-100% - 2.5rem));
   }
 }
 .scroll-white-logo {
