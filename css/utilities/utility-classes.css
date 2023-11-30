@@ -9,3 +9,23 @@
   position: relative;
   height: 100vh;
 }
+.splash-screen[data-active="false"],
+.splash-screen[data-active="true"] {
+  position: fixed;
+  inset: 0;
+  background-color: var(--black);
+  display: grid;
+  place-items: center;
+  z-index: 100;
+}
+.splash-screen[data-active="false"] {
+  animation: splash-screen-close 1s forwards;
+}
+@keyframes splash-screen-close {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}

@@ -1,8 +1,0 @@
-.montaza::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("/assets/images/montaza-img.jpg") no-repeat center
-    center/cover;
-  background-attachment: fixed;
-}

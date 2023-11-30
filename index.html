@@ -7,12 +7,15 @@
     <script defer src="/main.js"></script>
   </head>
   <body>
+    <div class="splash-screen" data-active="true">
+      <img src="/assets/images/logo-white.svg" />
+    </div>
     <header class="header">
       <img
         src="/assets/images/logo-white.svg"
         alt="header logo eleven av"
         class="header__logo"
-        data-visible="false"
+        data-visible="true"
       />
       <nav class="nav">
         <ul class="nav__list">
@@ -40,25 +43,6 @@
       </button>
     </header>
     <main class="main">
-      <aside class="aside">
-        <nav class="side-nav">
-          <a class="aside-nav__link" href="#streaming">
-            <img
-              src="/assets/icons/prijenos-uzivo-icon.svg"
-              aria-hidden="true"
-            />
-            PRIJENOSI UŽIVO
-          </a>
-          <a class="aside-nav__link" href="#produkcija"
-            ><img src="/assets/icons/produkcija-icon.svg" aria-hidden="true" />
-            PRODUKCIJA
-          </a>
-          <a class="aside-nav__link" href="#montaza"
-            ><img src="/assets/icons/montaza-icon.svg" aria-hidden="true" />
-            SNIMANJE i MONTAŽA
-          </a>
-        </nav>
-      </aside>
       <!-- HERO SECTION -->
       <section class="hero">
         <div class="container">
@@ -93,68 +77,64 @@
             <video
               class="promo-video"
               muted
+              autoplay
               playsinline
-              data-play="false"
-              controls
               type="video/mp4"
               src="/assets/promo-video.mp4"
             ></video>
-            <button class="play-promo-video-btn" data-play-btn="true">
-              <div class="triangle"></div>
-              <div class="circle"></div>
-            </button>
           </div>
         </div>
       </section>
       <!------------------->
-      <!-- STREAMING SECTION -->
-      <section class="section streaming" id="streaming">
-        <div class="container">
-          <div class="streaming__wrapper p-block-6">
-            <h2 class="h2-heading">prijenos uživo</h2>
-            <article class="section-article">
-              <img
-                src="/assets/icons/prijenos-uzivo-icon.svg"
-                aria-hidden="true"
-              />
-              <p>
-                Prijenosi svih vrsta događaja, od konferencija do sportskih
-                natjecanja, na internet platforme.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-      <!------------------->
-      <!-- PRODUKCIJA SECTION -->
-      <section class="section produkcija" id="produkcija">
-        <div class="container">
-          <div class="produkcija__wrapper p-block-6">
-            <h2 class="h2-heading">produkcija svih formata</h2>
-            <article class="section-article">
-              <img src="/assets/icons/produkcija-icon.svg" aria-hidden="true" />
-              <p>
+      <!-- OFFER SECTION -->
+      <section class="offer">
+        <div class="offer__articles-wrapper">
+          <article class="offer__article right" style="animation-delay: 0.2s">
+            <img
+              class="offer__article-img"
+              src="/assets/icons/icon-streaming.svg"
+              aria-hidden="true"
+            />
+            <div class="offer__article-body-text">
+              <h3 class="h3-heading offer__article-heading">prijenosi uživo</h3>
+              <p class="paragraph">
                 Od podcasta do TV emisija, pomoć pri realizaciji ili kompletna
                 realizacija projekata.
               </p>
-            </article>
-          </div>
-        </div>
-      </section>
-      <!------------------->
-      <!-- MONTAZA SECTION -->
-      <section class="section montaza" id="montaza">
-        <div class="container">
-          <div class="montaza__wrapper p-block-6">
-            <h2 class="h2-heading">snimanje i montaža</h2>
-            <article class="section-article">
-              <img src="/assets/icons/montaza-icon.svg" aria-hidden="true" />
-              <p>
-                Snimanje i montaža svih formata: korporativni video, video za
-                društvene mreže, ENG i news, TV emisije, podcasti.
+            </div>
+          </article>
+          <article class="offer__article right" style="animation-delay: 0.4s">
+            <img
+              class="offer__article-img"
+              src="/assets/icons/icon-produkcija.svg"
+              aria-hidden="true"
+            />
+            <div class="offer__article-body-text">
+              <h3 class="h3-heading offer__article-heading">
+                produkcija svih formata
+              </h3>
+              <p class="paragraph">
+                Prijenosi svih vrsta događaja, od konferencija do sportskih
+                natjecanja, na internet platforme.
               </p>
-            </article>
-          </div>
+            </div>
+          </article>
+          <article class="offer__article right" style="animation-delay: 0.6s">
+            <img
+              class="offer__article-img"
+              src="/assets/icons/icon-montaza.svg"
+              aria-hidden="true"
+            />
+            <div class="offer__article-body-text">
+              <h3 class="h3-heading offer__article-heading">
+                snimanje i montaža
+              </h3>
+              <p class="paragraph">
+                Snimanje i montaža svih formata: korporativni video, video za
+                društvene mreže, ENG i news, TV emisije, podcasti..
+              </p>
+            </div>
+          </article>
         </div>
       </section>
       <!------------------->

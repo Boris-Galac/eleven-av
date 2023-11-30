@@ -1,30 +1,3 @@
-// PROMO VIDEO PLAYER
-
-const promoVideo = document.querySelector(".promo-video");
-promoVideo.controls = false;
-const promoVideoPlayBtn = document.querySelector(".play-promo-video-btn");
-
-promoVideoPlayBtn.addEventListener("click", (e) => {
-  promoVideo.getAttribute("data-play");
-  if (promoVideo.getAttribute("data-play") === "false") {
-    promoVideo.setAttribute("data-play", "true");
-    promoVideoPlayBtn.setAttribute("data-play-btn", "false");
-    promoVideo.play();
-  }
-});
-promoVideo.addEventListener("click", (e) => {
-  if (promoVideo.getAttribute("data-play") === "true") {
-    promoVideo.pause();
-    promoVideo.setAttribute("data-play", "false");
-    promoVideoPlayBtn.setAttribute("data-play-btn", "true");
-  }
-});
-
-promoVideo.addEventListener("ended", (e) => {
-  promoVideo.setAttribute("data-play", "false");
-  promoVideoPlayBtn.setAttribute("data-play-btn", "true");
-});
-
 /// APPEAR LOGO ON SCROLL & PAGE INDICATOR
 
 window.addEventListener("scroll", (e) => {
@@ -58,3 +31,40 @@ window.addEventListener("scroll", (e) => {
     });
   });
 });
+
+// SPLASH SCREEN AND AUTO SCROLL
+
+window.addEventListener("load", (e) => {
+  // Simulate loading time with setTimeout
+  setTimeout(() => {
+    // Hide the splash screen after all content loads
+    document
+      .querySelector(".splash-screen")
+      .setAttribute("data-active", "false");
+
+    // Scroll down after 1s
+    setTimeout(() => {
+      window.scrollTo(0, window.innerHeight); // Scroll down by 100vh
+    }, 800);
+  }, 1000); // Adjust the timeout based on your loading time
+});
+
+// ANIMATIONS
+
+const observerElements = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show-right-left");
+    }
+    // else {
+    //   entry.target.classList.remove("show-right-left");
+    // }
+  });
+});
+
+const hiddenRight = document.querySelectorAll(".right");
+hiddenRight.forEach((el) => observerElements.observe(el));
+const hiddenLeft = document.querySelectorAll(".left");
+hiddenLeft.forEach((el) => observerElements.observe(el));
+const oapcity = document.querySelectorAll(".opacity");
+oapcity.forEach((el) => observerElements.observe(el));

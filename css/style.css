@@ -5,12 +5,11 @@
 @import "abstracts/sizes.css";
 /* utilities */
 @import "utilities/utility-classes.css";
+@import "utilities/animations.css";
 /* sections */
 @import "sections/hero.css";
 @import "sections/promo.css";
-@import "sections/streaming.css";
-@import "sections/produkcija.css";
-@import "sections/montaza.css";
+@import "sections/offer.css";
 @import "sections/about.css";
 @import "sections/kontakt.css";
 /* components */

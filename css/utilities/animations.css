@@ -1,0 +1,22 @@
+/* animations */
+
+.right {
+  opacity: 0;
+  transform: translatex(100%);
+}
+.left {
+  opacity: 0;
+  transform: translatex(-100%);
+}
+.opacity {
+  opacity: 0;
+}
+.show-right-left {
+  animation: animations-right-left 1.5s forwards;
+}
+@keyframes animations-right-left {
+  to {
+    transform: translatex(0%);
+    opacity: 1;
+  }
+}

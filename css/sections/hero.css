@@ -36,11 +36,16 @@
   display: grid;
   place-items: center;
 }
+.hero__logo-wrapper {
+}
 .hero__logo {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  margin-inline: auto;
+  text-align: center;
+  width: 60vw;
 }
 .logo-white {
   z-index: 5;
@@ -49,12 +54,12 @@
   z-index: 3;
   left: 50.5%;
   top: 49.9%;
-  opacity: 0.5;
-  animation: logo-blue 2s infinite linear;
+  opacity: 1;
+  animation: logo-blue 1s infinite linear;
 }
 @keyframes logo-blue {
   0% {
-    left: 51%;
+    left: 52%;
     top: 50.5%;
   }
   20% {
@@ -62,19 +67,44 @@
   }
   40% {
     left: 49.2%;
-    top: 50%;
+    top: 49%;
+  }
+  45% {
+    left: 49.6%;
+    top: 48.3%;
   }
   60% {
     left: 51%;
     top: 50.5%;
   }
+  61% {
+    filter: blur(5px);
+    left: 47.3%;
+    top: 50.5%;
+  }
+  65% {
+    left: 48%;
+    top: 50.5%;
+  }
+  68% {
+    left: 51%;
+    top: 50.5%;
+  }
   80% {
-    left: 50.1%;
+    left: 50%;
     top: 50.2%;
   }
   83% {
     left: 50.1%;
     top: 50.2%;
+  }
+  85% {
+    left: 49.8%;
+    top: 48.2%;
+  }
+  90% {
+    left: 50.3%;
+    top: 49.2%;
   }
   100% {
     left: 50.1%;
@@ -85,8 +115,8 @@
   left: 49.2%;
   top: 50.5%;
   z-index: 4;
-  opacity: 0.5;
-  animation: logo-green 2s infinite linear;
+  opacity: 1;
+  animation: logo-green 1s infinite linear;
 }
 @keyframes logo-green {
   0% {
@@ -97,17 +127,37 @@
     left: 49.5%;
     top: 51%;
   }
+  21% {
+    left: 50%;
+    top: 52%;
+  }
+  21% {
+    left: 49.8%;
+    top: 52%;
+  }
   40% {
     left: 49.2%;
+    top: 49.3%;
+  }
+  43% {
+    left: 50%;
     top: 49.8%;
   }
   60% {
     left: 49%;
     top: 50.1%;
   }
+  65% {
+    left: 49%;
+    top: 50.1%;
+  }
   80% {
     left: 49.5%;
     top: 50.3%;
+  }
+  81.5% {
+    left: 49.8%;
+    top: 51%;
   }
   85% {
     left: 48.5%;
